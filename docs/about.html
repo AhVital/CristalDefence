@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании - Пуленепробиваемое стекло</title>
+    <meta name="description" content="Премиальные пуленепробиваемые стекла для частных домов, бизнеса и VIP-автомобилей">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="page-about">
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="container nav">
+      <div class="logo" onclick="window.location.href='/'" style="cursor: pointer;">
+        Crystal Defence
+      </div>
+      
+      <ul class="nav-menu">
+        <li><a href="/" class="nav-link">Главная</a></li>
+        <li><a href="/products.html" class="nav-link">Продукция</a></li>
+        <li><a href="/about.html" class="nav-link active">О компании</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container main-content" style="margin-top: calc(80px + 2rem);">
+
+    <div class="fade-up">
+    <section class="hero hero-dark">
+        <div class="hero-video-container">
+            <!-- Контейнер для видео -->
+            <video autoplay muted loop playsinline>
+                <source src="/static/videos/hero-bg.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>О компании CrystalDefence</h1>
+            <p>Лидер рынка защитных стекол в России с 2015 года — создаем безопасность для вашего бизнеса и дома</p>
+        </div>
+    </section>
+    </div>
+
+    <div class="fade-up">
+    <section class="content container">
+        <div class="about-grid">
+            <article class="about-card fade-in-up">
+                <h2 class="section-title">Наша миссия</h2>
+                <p>Мы создаем безопасную среду для жизни и бизнеса. Наши разработки помогают защитить частные дома, бизнес-центры и объекты инфраструктуры.</p>
+            </article>
+
+            <article class="about-card fade-in-up">
+                <h2 class="section-title">Где мы работаем</h2>
+                <ul style="list-style: none; margin-top: 1rem;">
+                    <li>📍 Москва и Московская область</li>
+                    <li>📍 Санкт-Петербург</li>
+                    <li>📍 Казань, Екатеринбург</li>
+                </ul>
+            </article>
+
+            <article class="about-card fade-in-up">
+                <h2 class="section-title">Сертификаты</h2>
+                <p>Все наши решения сертифицированы по ГОСТ Р 50871-2019 и имеют международные сертификаты качества ISO 9001.</p>
+            </article>
+        </div>
+
+        <div class="fade-up" style="margin-top: 4rem;">
+            <div class="cta-container">
+                <h3>Сотрудничество с нами</h3>
+                <p>Мы работаем по всей России — Москва, Санкт-Петербург, Казань, Екатеринбург и другие города. Оставляйте заявку на бесплатный расчет</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Видео-раздел для истории компании -->
+    <section class="hero-dark" style="padding: 6rem 2rem; text-align: center;">
+        <div class="fade-in-up">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">История компании</h2>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem;">За 10 лет мы создали более 500 защитных решений для частных домов, бизнес-центров и объектов инфраструктуры</p>
+        </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" style="background: var(--secondary-bg); padding: 3rem 0; margin-top: 4rem;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+        <div>
+          <h3 style="font-family: var(--font-heading); margin-bottom: 1rem; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Crystal Defence</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">Премиальные решения в области безопасности с 2015 года.</p>
+        </div>
+        
+        <div>
+          <h4 style="margin-bottom: 1rem;">Контакты</h4>
+          <ul style="list-style: none; color: var(--text-secondary);">
+            <li>📞 +7 (999) 000-00-00</li>
+            <li>✉️ info@crystaldefence.ru</li>
+            <li>📍 Москва, ул. Примерная, д. 1</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 style="margin-bottom: 1rem;">Информация</h4>
+          <ul style="list-style: none; color: var(--text-secondary);">
+            <li>🔒 <span style="cursor: pointer;">Политика конфиденциальности</span></li>
+            <li>📝 <span style="cursor: pointer;">Договор оферты</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--nav-border); text-align: center; color: var(--text-muted); font-size: 0.85rem;">
+        &copy; 2024 Crystal Defence. Все права защищены.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Smooth scroll для якорных ссылок
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+              target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          });
+        });
+
+        // Header blur эффект при скролле
+        window.addEventListener('scroll', () => {
+          const header = document.querySelector('.header');
+          if (window.scrollY > 50) {
+            header.style.background = 'rgba(15, 23, 42, 0.95)';
+          } else {
+            header.style.background = 'rgba(15, 23, 42, 0.8)';
+          }
+        });
+    });
+  </script>
+
+</body>
+</html>

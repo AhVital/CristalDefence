@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Пуленепробиваемое стекло</title>
+    {% include 'base.html' %}
+</head>
+<body page="index">
+    {% block content %}
+    <div class="fade-up">  <!-- Aнимация появления: Fade In Up -->
+    <section class="hero hero-dark">
+        <div class="hero-video-container">
+            <!-- Контейнер для видео (placeholder) — замените src на реальный URL видео -->
+            <video autoplay muted loop playsinline>
+                <source src="/static/videos/hero-bg.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео. Загрузите video-bg.mp4 в /static/videos/
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Пуленепробиваемые стекла для вашего спокойствия</h1>
+            <p>Профессиональное оснащение частных домов и офисов защитными стеклами с гарантией безопасности класса 4</p>
+        </div>
+    </section>
+</div>
+    
+    <div class="fade-up">
+    <section class="content container">
+        <h2 class="section-title">Почему выбирают наши решения?</h2>
+        <div class="features-grid">
+            <article class="feature-card">
+                <h3>🛡️ Защита класса 4</h3>
+                <p>Сертифицированные стекла соответствуют ГОСТ Р 50871-2019. Выдерживают попадание пуль и осколков при прямых выстрелах.</p>
+            </article>
+            <article class="feature-card">
+                <h3>🏠 Для частных домов</h3>
+                <p>Красиво оформленные решения для окон, входных дверей и остекления. Эстетика без компромиссов с безопасностью.</p>
+            </article>
+            <article class="feature-card">
+                <h3>⚡ Быстрый монтаж</h3>
+                <p>Профессиональная установка за 1-2 дня с гарантией на монтажные работы до 10 лет. Бесплатный выезд инженера.</p>
+            </article>
+        </div>
+
+        <div class="fade-up" style="margin-top: 4rem;">
+            <div class="cta-container">
+                <h3>Интересует конкретная модель?</h3>
+                <p>Оставьте заявку — мы подготовим расчет стоимости и поможем с подбором оптимального решения</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Видео-раздел для дополнительной информации -->
+    <section class="hero-dark" style="padding: 6rem 2rem; text-align: center;">
+        <div class="fade-in-up">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Изображение в действии</h2>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem;">Наши решения устанавливаются на объекты по всему миру. Показываем примеры монтажа и результат.</p>
+        </div>
+    </section>
+
+    {% endblock %}
+</body>
+</html>

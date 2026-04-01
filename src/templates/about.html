@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании - Пуленепробиваемое стекло</title>
+    {% include 'base.html' %}
+</head>
+<body page="about">
+    {% block content %}
+    <div class="fade-up">
+    <section class="hero hero-dark">
+        <div class="hero-video-container">
+            <!-- Контейнер для видео -->
+            <video autoplay muted loop playsinline>
+                <source src="/static/videos/hero-bg.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>О компании CrystalDefence</h1>
+            <p>Лидер рынка защитных стекол в России с 2015 года — создаем безопасность для вашего бизнеса и дома</p>
+        </div>
+    </section>
+</div>
+
+    <div class="fade-up">
+    <section class="content container">
+        <div class="about-grid">
+            <article class="about-card fade-in-up">
+                <h2 class="section-title">Наша миссия</h2>
+                <p>Мы создаем безопасную среду для жизни и бизнеса. Наши разработки помогают защитить частные дома, бизнес-центры и объекты инфраструктуры.</p>
+            </article>
+
+            <article class="about-card fade-in-up">
+                <h2 class="section-title">Где мы работаем</h2>
+                <ul style="list-style: none; margin-top: 1rem;">
+                    <li>📍 Москва и Московская область</li>
+                    <li>📍 Санкт-Петербург</li>
+                    <li>📍 Казань, Екатеринбург</li>
+                </ul>
+            </article>
+
+            <article class="about-card fade-in-up">
+                <h2 class="section-title">Сертификаты</h2>
+                <p>Все наши решения сертифицированы по ГОСТ Р 50871-2019 и имеют международные сертификаты качества ISO 9001.</p>
+            </article>
+        </div>
+
+        <div class="fade-up" style="margin-top: 4rem;">
+            <div class="cta-container">
+                <h3>Сотрудничество с нами</h3>
+                <p>Мы работаем по всей России — Москва, Санкт-Петербург, Казань, Екатеринбург и другие города. Оставляйте заявку на бесплатный расчет</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Видео-раздел для истории компании -->
+    <section class="hero-dark" style="padding: 6rem 2rem; text-align: center;">
+        <div class="fade-in-up">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">История компании</h2>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem;">За 10 лет мы создали более 500 защитных решений для частных домов, бизнес-центров и объектов инфраструктуры</p>
+        </div>
+    </section>
+
+</body>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    const observerOptions = { threshold: 0.1, rootMargin: '0px' };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up').forEach(el => {
+        el.classList.add('fade-in-up');
+        observer.observe(el);
+    });
+});
+</script>
+</body>
+</html>
